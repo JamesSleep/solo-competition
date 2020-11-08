@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/solo-competition/static/js/main.7b3242db.chunk.js",
+    "main.js.map": "/solo-competition/static/js/main.7b3242db.chunk.js.map",
+    "runtime-main.js": "/solo-competition/static/js/runtime-main.a30f8559.js",
+    "runtime-main.js.map": "/solo-competition/static/js/runtime-main.a30f8559.js.map",
+    "static/js/2.093ee4fa.chunk.js": "/solo-competition/static/js/2.093ee4fa.chunk.js",
+    "static/js/2.093ee4fa.chunk.js.map": "/solo-competition/static/js/2.093ee4fa.chunk.js.map",
+    "index.html": "/solo-competition/index.html",
+    "static/js/2.093ee4fa.chunk.js.LICENSE.txt": "/solo-competition/static/js/2.093ee4fa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a30f8559.js",
+    "static/js/2.093ee4fa.chunk.js",
+    "static/js/main.7b3242db.chunk.js"
+  ]
+}
