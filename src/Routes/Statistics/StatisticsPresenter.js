@@ -31,7 +31,7 @@ const Icon = styled.img``;
 export default () => (
   <Container>
     <MessageBox>
-      <Icon src="/images/teamo.png" />
+      <Icon src="images/teamo.png" />
       <Text>
         준비중입니다 !
       </Text>

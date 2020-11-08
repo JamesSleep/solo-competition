@@ -16,7 +16,7 @@ const globalStyles = createGlobalStyle`
     font-size: 13px;
     background-color: rgba(20, 20, 20, 1);
     color: white;
-    background-image: url("/images/take_over.jpg");
+    background-image: url("images/take_over.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

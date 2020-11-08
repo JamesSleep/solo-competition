@@ -71,11 +71,11 @@ export default () => (
         정전, 서버 문제 등의 불가피한 상황외에 탈주할 경우 <br/>
       </Content>
       <Title>라인별 기준선</Title>
-      <ScreenShot src="/images/mid1.png" />
-      <ScreenShot src="/images/mid2.png" />
-      <ScreenShot src="/images/mid3.png" />
-      <ScreenShot src="/images/top1.png" />
-      <ScreenShot src="/images/bottom1.png" />
+      <ScreenShot src="images/mid1.png" />
+      <ScreenShot src="images/mid2.png" />
+      <ScreenShot src="images/mid3.png" />
+      <ScreenShot src="images/top1.png" />
+      <ScreenShot src="images/bottom1.png" />
     </TextBox>
   </Container>
 );
