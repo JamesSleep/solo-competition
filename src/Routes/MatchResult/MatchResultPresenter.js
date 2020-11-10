@@ -13,7 +13,8 @@ const Container = styled.div`
 `;
 
 const MatchBox = styled.div`
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   //height: 300px;
   padding: 40px 20px;
   background-color: rgba(10, 10, 10, .95);
@@ -40,12 +41,20 @@ const SetColumn = styled.div`
 const ImageList = styled.div``;
 
 const ChapionImg = styled.img`
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
+  @media (max-width: 1024px) {
+    width: 70px;
+  }
 `;
 
 const LoseChamp = styled.img`
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
   opacity: 0.2;
+  @media (max-width: 1024px) {
+    width: 70px;
+  }
 `;
 
 export default () => (
