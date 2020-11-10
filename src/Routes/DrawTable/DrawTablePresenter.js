@@ -87,7 +87,7 @@ const HorizontalLine = styled.div`
   position: absolute;
   background-color: #2e2f33;
   top: 75px;
-  right: -44px;
+  right: -45px;
 `;
 
 const HorizontalLine2 = styled.div`
@@ -124,6 +124,14 @@ const SemiFinalVLine = styled.div`
   right: -43px;
 `;
 
+const Score = styled.div`
+  position: absolute;
+  right: 5px;
+  color: ${props => props.win ? "#c4943f" : "#fff"};
+  font-size: 16px;
+  font-weight: 600;
+`;
+
 export default ({ players }) => (
   <Container>
     <OpacityBox>
@@ -132,26 +140,50 @@ export default ({ players }) => (
           8강
         </RoundHeader>
         <RoundBody>
-          { players.map((player, index) => {
+          {players.map((player, index) => {
             if (index % 2 > 0) {
               return (
                 <MatchColumn>
                   <HorizontalLine />
-                  { index % 3 === 0 && <VerticalLine /> }
-                  { index % 7 === 0 && <VerticalLine /> }
-                  { index % 3 === 0 && <HorizontalLine2 /> }
-                  { index % 7 === 0 && <HorizontalLine2 /> }
+                  { index % 3 === 0 && <VerticalLine />}
+                  { index % 7 === 0 && <VerticalLine />}
+                  { index % 3 === 0 && <HorizontalLine2 />}
+                  { index % 7 === 0 && <HorizontalLine2 />}
                   <PlayerBlock>
-                    {players[index-1]}
+                    {players[index - 1]}
+                    {index - 1 === 4 && (
+                      <Score win={false}>1</Score>
+                    )}
+                    {index - 1 === 6 && (
+                      <Score win={false}>1</Score>
+                    )}
+                    {index - 1 === 0 && (
+                      <Score win={true}>2</Score>
+                    )}
+                    {index - 1 === 2 && (
+                      <Score win={true}>2</Score>
+                    )}
                   </PlayerBlock>
                   <MatchDate>
-                    { index === 1 && "2020/11/9  PM 08:00" }
-                    { index === 3 && "2020/11/10  PM 08:00" }
-                    { index === 5 && "2020/11/10  PM 09:00" }
-                    { index === 7 && "2020/11/9  PM 09:00" }
+                    {index === 1 && "2020/11/10  PM 07:00"}
+                    {index === 3 && "2020/11/10  PM 08:00"}
+                    {index === 5 && "2020/11/9  PM 08:00"}
+                    {index === 7 && "2020/11/9  PM 09:00"}
                   </MatchDate>
                   <PlayerBlock>
                     {player}
+                    {index === 5 && (
+                      <Score win={true}>2</Score>
+                    )}
+                    {index === 7 && (
+                      <Score win={true}>2</Score>
+                    )}
+                    {index === 1 && (
+                      <Score win={false}>1</Score>
+                    )}
+                    {index === 3 && (
+                      <Score win={false}>1</Score>
+                    )}
                   </PlayerBlock>
                 </MatchColumn>
               )
@@ -168,19 +200,19 @@ export default ({ players }) => (
             <SemiFinalHLine />
             <SemiFinalHLine2 />
             <SemiFinalVLine />
-            <PlayerBlock></PlayerBlock>
+            <PlayerBlock>온천장베인스</PlayerBlock>
             <MatchDate>
               {"2020/11/12 PM 08:00"}
             </MatchDate>
-            <PlayerBlock></PlayerBlock>
+            <PlayerBlock>김에코다</PlayerBlock>
           </MatchColumn>
           <MatchColumn>
             <SemiFinalHLine />
-            <PlayerBlock></PlayerBlock>
+            <PlayerBlock>hui biao</PlayerBlock>
             <MatchDate>
-              {"2020/11/12 PM 09:00"}
+              {"2020/11/13 PM 08:00"}
             </MatchDate>
-            <PlayerBlock></PlayerBlock>
+            <PlayerBlock>무한쯔꾸요미</PlayerBlock>
           </MatchColumn>
         </RoundBody>
       </RoundBox>

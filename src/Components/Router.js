@@ -7,7 +7,7 @@ import Statistics from "../Routes/Statistics";
 import RulePage from "../Routes/RulePage";
 
 export default () => (
-  <Router>
+  <Router basename="/solo-competition/">
     <>
       <Header />
       <Switch>
