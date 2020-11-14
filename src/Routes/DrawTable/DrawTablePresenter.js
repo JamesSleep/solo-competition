@@ -200,19 +200,31 @@ export default ({ players }) => (
             <SemiFinalHLine />
             <SemiFinalHLine2 />
             <SemiFinalVLine />
-            <PlayerBlock>온천장베인스</PlayerBlock>
+            <PlayerBlock>
+              온천장베인스
+              <Score win={false}>0</Score>
+            </PlayerBlock>
             <MatchDate>
               {"2020/11/12 PM 08:00"}
             </MatchDate>
-            <PlayerBlock>김에코다</PlayerBlock>
+            <PlayerBlock>
+              김에코다
+              <Score win={true}>2</Score>
+            </PlayerBlock>
           </MatchColumn>
           <MatchColumn>
             <SemiFinalHLine />
-            <PlayerBlock>hui biao</PlayerBlock>
+            <PlayerBlock>
+              hui biao
+              <Score win={true}>2</Score>
+            </PlayerBlock>
             <MatchDate>
               {"2020/11/13 PM 08:00"}
             </MatchDate>
-            <PlayerBlock>무한쯔꾸요미</PlayerBlock>
+            <PlayerBlock>
+              무한쯔꾸요미
+              <Score win={false}>0</Score>
+            </PlayerBlock>
           </MatchColumn>
         </RoundBody>
       </RoundBox>
@@ -222,11 +234,11 @@ export default ({ players }) => (
         </RoundHeader>
         <RoundBody>
           <MatchColumn>
-            <PlayerBlock></PlayerBlock>
+            <PlayerBlock>김에코다</PlayerBlock>
             <MatchDate>
               {"2020/11/14 PM 08:00"}
             </MatchDate>
-            <PlayerBlock></PlayerBlock>
+            <PlayerBlock>hui biao</PlayerBlock>
           </MatchColumn>
         </RoundBody>
       </RoundBox>
