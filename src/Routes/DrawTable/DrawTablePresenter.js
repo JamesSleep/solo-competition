@@ -234,11 +234,17 @@ export default ({ players }) => (
         </RoundHeader>
         <RoundBody>
           <MatchColumn>
-            <PlayerBlock>김에코다</PlayerBlock>
+            <PlayerBlock>
+              김에코다
+              <Score win={false}>0</Score>
+            </PlayerBlock>
             <MatchDate>
               {"2020/11/14 PM 08:00"}
             </MatchDate>
-            <PlayerBlock>hui biao</PlayerBlock>
+            <PlayerBlock>
+              hui biao
+              <Score win={true}>2</Score>
+            </PlayerBlock>
           </MatchColumn>
         </RoundBody>
       </RoundBox>

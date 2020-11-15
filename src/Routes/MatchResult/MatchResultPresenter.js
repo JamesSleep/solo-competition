@@ -159,7 +159,23 @@ export default () => (
         VS
         <ImageList>
           <LoseChamp src="images/Rumble.jpg" />
-          <LoseChamp src="images/shen.jpg" />
+          <LoseChamp src="images/Shen.jpg" />
+        </ImageList>
+      </SetColumn>
+    </MatchBox>
+    <MatchBox>
+      <MatchHeader>
+        결승전 김에코다 vs hui biao
+      </MatchHeader>
+      <SetColumn>
+        <ImageList>
+          <LoseChamp src="images/Volibear.jpg" />
+          <LoseChamp src="images/Lux.jpg" />
+        </ImageList>
+        VS
+        <ImageList>
+          <ChapionImg src="images/Vayne_11.jpg" />
+          <ChapionImg src="images/Lucian.jpg" />
         </ImageList>
       </SetColumn>
     </MatchBox>
